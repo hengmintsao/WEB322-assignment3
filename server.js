@@ -15,9 +15,8 @@
 
 
 
-
-const legoData = require("./modules/legoSets");
 const express = require('express');
+const legoData = require("./modules/legoSets");
 const path = require('path');
 const port = process.env.PORT || 3000;
 
