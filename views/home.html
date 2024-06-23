@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="../public/css/main.css" />
+</head>
+<body class="bg-gray-400">
+    <div class="navbar bg-blue-400">
+        <div class="navbar-start">
+          <div class="dropdown">
+
+          </div>
+          <a href="/" class="btn btn-ghost text-xl">Lego Collection</a>
+          <a href="/about" class="btn btn-ghost text-xl">About</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1000">
+            <li>
+              <details>
+                <summary>Theme</summary>
+                <ul class="p-2">
+                    <li><a href="/lego/sets?theme=Castle">Castle Sets</a></li>
+                    <li><a href="/lego/sets?theme=Space">Space Sets</a></li>
+                    <li><a href="/lego/sets?theme=Technic">Technic Sets</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+      </div>
+    </div>
+    <div class="md:container md:mx-auto">
+        <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                  <h1 class="text-5xl font-bold">Hello my friend!</h1>
+                  <p class="py-6">Feel free to check the fun and wonderful masterpiece of legos!! Hope you enjoy the time here. I wish you all the best. You can also press the button below to know more lego sets.</p>
+                  <a href="/lego/sets" class="btn btn-primary">Click to see Lego sets</a>
+                </div>
+              </div>
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+              <div class="card bg-white p-4 rounded-lg shadow-lg">
+                  <img src="https://cdn.rebrickable.com/media/sets/10178-1.jpg" alt="Motorized Walking AT-AT" class="rounded-lg">
+                  <h2 class="text-xl font-bold mt-4">Motorized Walking AT-AT</h2>
+                  <p class="mt-2">Look at this beautiful walking AT-AT.</p>
+                  <a href="/lego/sets/10178-1" class="btn btn-secondary mt-4">View Set</a>
+              </div>
+              <div class="card bg-white p-4 rounded-lg shadow-lg">
+                  <img src="https://cdn.rebrickable.com/media/sets/10193-1.jpg" alt="Town Mini-Figures" class="rounded-lg">
+                  <h2 class="text-xl font-bold mt-4">Town Mini-Figures</h2>
+                  <p class="mt-2">Look at this beautiful town.</p>
+                  <a href="/lego/sets/10193-1" class="btn btn-secondary mt-4">View Set</a>
+              </div>
+              <div class="card bg-white p-4 rounded-lg shadow-lg">
+                  <img src="https://cdn.rebrickable.com/media/sets/10194-1.jpg" alt="Emerald Night" class="rounded-lg">
+                  <h2 class="text-xl font-bold mt-4">Emerald Night</h2>
+                  <p class="mt-2">Look at this beautiful train.</p>
+                  <a href="/lego/sets/10194-1" class="btn btn-secondary mt-4">View Set</a>
+              </div>
+          </div>  
+      </div>
+</body>
+</html>
