@@ -1,15 +1,19 @@
 
 /********************************************************************************
-*  WEB322 – Assignment 02
+*  WEB322 – Assignment 03
 * 
 *  I declare that this assignment is my own work in accordance with Seneca's
 *  Academic Integrity Policy:
 * 
 *  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
 * 
-*  Name: Hengmin Tsao Student ID: 166494229 Date: 2024 Jun 04
+*  Name: Hengmin Tsao Student ID: 166494229 Date: 23 JUN 2024
+*
+*  Published URL: ___________________________________________________________
 *
 ********************************************************************************/
+
+
 
 
 const legoData = require("./modules/legoSets");
