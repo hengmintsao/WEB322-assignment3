@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "tw:build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css"
-    
+    "tw:build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css",
+    "dev":""
+  
   },
   "author": "Hengmin Tsao",
   "license": "ISC",
