@@ -1,15 +1,15 @@
 
 /********************************************************************************
-*  WEB322 – Assignment 03
+*  WEB322 – Assignment 04
 * 
 *  I declare that this assignment is my own work in accordance with Seneca's
 *  Academic Integrity Policy:
 * 
 *  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
 * 
-*  Name: Hengmin Tsao Student ID: 166494229 Date: 23 JUN 2024
+*  Name: Hengmin Tsao Student ID: 166494229 Date: 13 JUL 2024
 *
-*  Published URL: https://web-322-assignment3-upfl.vercel.app/
+*  Published URL: 
 *
 ********************************************************************************/
 
@@ -22,6 +22,8 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.use(express.static('public'));
 
 legoData.Initialize()
@@ -30,12 +32,14 @@ legoData.Initialize()
 
         // GET "/"
         app.get('/', (req, res) => {
-            res.sendFile(path.join(__dirname, 'views', 'home.html'));
+            //res.render("home");
+            res.sendFile(path.join(__dirname, "views/home.html"));
         });
 
         
         app.get('/about', (req, res) => {
-            res.sendFile(path.join(__dirname, 'views', 'about.html'));
+            //res.render("about",{page: "/about"});
+            res.sendFile(path.join(__dirname, "views/about.html"));
         });
 
         
@@ -63,7 +67,8 @@ legoData.Initialize()
 
         
         app.use((req, res) => {
-            res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+            //res.status(404).render("404");
+            res.status(404).sendFile(path.join(__dirname, "views/404.html"));
         });
 
     })
